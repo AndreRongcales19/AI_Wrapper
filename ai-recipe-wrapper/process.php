@@ -1,4 +1,3 @@
-
 <?php
 // Inclusief de AIWrapper klasse
 require_once 'classes/AIWrapper.php';
