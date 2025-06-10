@@ -20,8 +20,13 @@
         </form>
 
         <?php if (isset($_GET['message'])): ?>
-            <div class="message">
-                <?php echo htmlspecialchars($_GET['message']); ?>   
+            <div class="recipe-response">
+                <?php 
+                    $message = htmlspecialchars($_GET['message']);
+                    // Convert newlines to <br> tags for proper formatting
+                    $message = nl2br($message);
+                    echo $message;
+                ?>   
             </div>
         <?php endif; ?>
     </div>
